@@ -1,7 +1,21 @@
 @font-face {
-    font-family: "Facile Sans", Arial, sans-serif ;
+    font-family: "Facile Sans";
     src: url(./fonts/Facile\ Sans.otf);
 }
+@font-face {
+    font-family: "Futura";
+    src: url(./fonts/futur.ttf);
+}
+@font-face {
+    font-family: "Futura Bold";
+    src: url(./fonts/Futura\ Bold\ font.ttf);
+}
+@font-face {
+    font-family: "Futura CD Bold";
+    src: url(./fonts/Futura\ Condensed\ Extra\ Bold.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 
 html {
     font-size: 16px;
@@ -19,7 +33,7 @@ body {
     margin: 0;
     height: 100%;
     display: grid;
-    grid-template-rows: auto 40px 5fr 40px auto;
+    grid-template-rows: auto 40px 1fr 40px auto;
     overflow-x: hidden;
 }
 
@@ -88,3 +102,214 @@ footer {
     background-color: rgb(67, 49, 16);
 }
 
+/** About Style*/
+.about-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 4rem;
+}
+.about-header h1 {
+    text-decoration: underline;
+    font-family: Futura CD Bold;
+}
+.about-header p {
+    margin: 0;
+    padding: 0 2rem;
+    display: block;
+    font-size: 1.5rem;
+    font-family: Futura Bold;
+}
+.credits {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 6rem;
+}
+
+
+
+
+
+/** Main Menu Page Styles */
+.content-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: url(./img/menu-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6;
+    z-index: 0;
+}
+.main-content {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-header {
+    display: flex;
+    height: 30%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.menu-mainbuttons {
+    display: flex;
+    height: 70%;
+    width: 80%;
+    align-items: center;
+    justify-content: space-around;
+}
+.content-header h1 {
+    font-family: Futura Bold;
+    font-size: 4rem;
+}
+
+.menu-mainbuttons button {
+    width: 24rem;
+    height: 14rem;
+    margin-bottom: 2rem;
+    border-radius: 4rem;
+    font-size: 5rem;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: #00000072;
+    font-family: Futura Bold;
+}
+
+/** Menu styles */
+/** Menu Header Styles */
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFD42C;
+    background: linear-gradient(to bottom, #FFD42C 60%, #f2d35660 90%, white 100%);
+}
+
+.menu-buttons-wrapper {
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-evenly;
+    display: flex;
+    width: 50%;
+    height: 90%;
+}
+
+.menu-buttons-wrapper button {
+    /** Change the font */
+    font-family: "Futura CD Bold";
+    font-weight: 700;
+    font-size: 1rem;
+    width: 8rem;
+    height: 4rem;
+    border-radius: 4rem;
+    display: flex;
+    border: none;
+    align-items: center;
+    background-color: #262830;
+    color: white;
+}
+
+.img-container {
+    display: flex;
+    height: 80%;
+    width: 50%;
+    justify-content: center;
+    border-radius: 4rem;
+    background-color: #FFD42C;
+    border: none;
+    margin-right: 0.5rem;
+    justify-self: flex-start;
+}
+
+.img-container img {
+    height: 90%;
+    align-self: center;
+    width: 70%;
+    border-radius: 4rem;
+}
+
+/** Menu Main Section Styles*/
+.menu-mainsection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(238, 238, 238, 0.132);
+}
+
+.menu-mainsection > h3 {
+    place-self: center;
+    margin: 1rem;
+    font-size: 4rem;
+    font-family: Futura CD Bold;
+}
+
+.menu-items-wrapper {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    padding: 1rem 0rem;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menu-item-panel {
+    flex: 0 0 18rem; /* grow, shrink, base width */
+    max-height: 20rem;
+    box-shadow: rgba(203, 203, 203, 0.767) 0px 0px 9px 5px;
+    aspect-ratio: 1 / 2;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item-img {
+    padding: 5px;
+    height: 50%;
+}
+
+.menu-item-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.menu-item-desc {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    flex-direction: column;
+    font-family: Roboto, Helvetica, Arial, sans-serifs;
+}
+.menu-item-desc h3 {
+    align-self: center;
+    font-size: 1.5rem;
+    margin: 0.5rem 0rem;
+    font-family: Futura Bold;
+}
+.menu-item-desc p {
+    font-size: 0.9rem;
+    padding: 1rem 0.5rem;
+    margin: 0;
+    flex: auto;
+    text-overflow: wrap;
+}

@@ -1,5 +1,5 @@
-import hotHoneyImg from "./img/hothoney.png";
-import koreanYuzuImg from "./img/koreanyuzu.png";
+import hotHoneyImg from "./img/wings/hothoney.png";
+import koreanYuzuImg from "./img/wings/koreanyuzu.png";
 
 function HomePage () {
     // Global DOM Elements that are being created
